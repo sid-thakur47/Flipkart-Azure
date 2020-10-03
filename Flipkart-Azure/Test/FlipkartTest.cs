@@ -27,5 +27,13 @@ namespace Flipkart_Azure.Test
             Cart cart = new Cart(driver);
             cart.Placeorder();
         }
+
+
+        [Test, Order(4)]
+        public void logoutTest()
+        {
+            Logout log = new Logout(driver);
+            log.FlipkartLogout();
+        }
     }
 }
