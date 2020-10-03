@@ -20,5 +20,12 @@ namespace Flipkart_Azure.Test
             HomePage page = new HomePage(driver);
             page.SearchProduct();
         }
+
+        [Test, Order(3)]
+        public void PlacOrderTest()
+        {
+            Cart cart = new Cart(driver);
+            cart.Placeorder();
+        }
     }
 }

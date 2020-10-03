@@ -36,6 +36,7 @@ namespace Flipkart_Azure.Pages
             Thread.Sleep(5000);
             selectProduct.Click();
             Thread.Sleep(2000);
+            driver.SwitchTo().Window(driver.WindowHandles[1]);
         }
     }
 }
