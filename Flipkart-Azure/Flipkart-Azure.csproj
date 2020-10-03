@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\FlipkartBase.cs" />
+    <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Pages\Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test\FlipkartTest.cs" />

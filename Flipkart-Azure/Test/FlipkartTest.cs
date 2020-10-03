@@ -13,5 +13,12 @@ namespace Flipkart_Azure.Test
             login.FlipkartLogin();
             Assert.AreEqual(driver.Title, title);
         }
+
+        [Test, Order(2)]
+        public void SearchProductTest()
+        {
+            HomePage page = new HomePage(driver);
+            page.SearchProduct();
+        }
     }
 }
