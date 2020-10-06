@@ -6,7 +6,7 @@ namespace Flipkart_Azure.Pages
 {
     public class Cart
     {
-        private IWebDriver driver;
+         IWebDriver driver;
 
         public Cart(IWebDriver driver)
         {

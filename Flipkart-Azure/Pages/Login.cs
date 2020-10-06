@@ -10,7 +10,7 @@ namespace Flipkart_Azure.Pages
          string phoneNumber = ConfigurationManager.AppSettings["number"];
          string pass = ConfigurationManager.AppSettings["password"];
 
-        public IWebDriver driver;
+        private  IWebDriver driver;
         public Login(IWebDriver driver)
         {
             this.driver = driver;
@@ -18,17 +18,17 @@ namespace Flipkart_Azure.Pages
         }
 
         [FindsBy(How = How.XPath, Using = "//input[@class='_2zrpKA _1dBPDZ']")]
-        IWebElement phone;
+        public IWebElement phoneNum;
 
         [FindsBy(How = How.XPath, Using = "//input[@class='_2zrpKA _3v41xv _1dBPDZ']")]
-        IWebElement password;
+        public IWebElement password;
 
         [FindsBy(How = How.XPath, Using = "//button[@class='_2AkmmA _1LctnI _7UHT_c']//span[contains(text(),'Login')]")]
-         IWebElement loginButton;
+        public IWebElement loginButton;
 
         public void FlipkartLogin()
         {
-            phone.SendKeys(phoneNumber);
+            phoneNum.SendKeys(phoneNumber);
             Thread.Sleep(2000);
             password.SendKeys(pass);
             Thread.Sleep(2000);

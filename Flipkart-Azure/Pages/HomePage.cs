@@ -1,15 +1,10 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Flipkart_Azure.Pages
 {
-   public class HomePage
+    public class HomePage
    {
       private IWebDriver driver;
 
