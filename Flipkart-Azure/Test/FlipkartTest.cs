@@ -28,7 +28,6 @@ namespace Flipkart_Azure.Test
             cart.Placeorder();
         }
 
-
         [Test, Order(4)]
         public void logoutTest()
         {

@@ -43,7 +43,5 @@ namespace Flipkart_Azure.Base
         {
             driver.Quit();
         }
-
-
     }
 }
