@@ -1,13 +1,9 @@
 ﻿using OpenQA.Selenium;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Flipkart_Azure.Utils
 {
-   public class Utility
+    public class Utility
     {
         public static string TakeScreenshot(IWebDriver driver, string testStatus)
         {
